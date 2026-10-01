@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/thanhan92-f1/tu-vi-dau-so-research/assets/schemas/case.schema.json",
+  "title": "Tử Vi Đẩu Số Research Case",
+  "type": "object",
+  "required": [
+    "project_version",
+    "profile",
+    "core",
+    "palaces"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "project_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(?:\\.\\d+)?$"
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "case_id",
+        "sex_for_chart",
+        "birth",
+        "input_confidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "pattern": "^TV-[A-Za-z0-9-]+$"
+        },
+        "name_alias": {
+          "type": "string"
+        },
+        "sex_for_chart": {
+          "type": "string",
+          "minLength": 1
+        },
+        "birth": {
+          "type": "object",
+          "required": [
+            "calendar_type",
+            "date",
+            "clock_time",
+            "timezone",
+            "source_of_time"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "calendar_type": {
+              "enum": [
+                "solar",
+                "lunar"
+              ]
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "lunar_leap_month": {
+              "type": "boolean"
+            },
+            "clock_time": {
+              "type": "string",
+              "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+            },
+            "time_branch": {
+              "type": "string"
+            },
+            "place": {
+              "type": "string"
+            },
+            "timezone": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_of_time": {
+              "enum": [
+                "document",
+                "family_memory",
+                "estimate",
+                "unknown"
+              ]
+            },
+            "estimated_error_minutes": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "input_confidence": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "chart_source": {
+          "type": "string"
+        },
+        "school": {
+          "type": "string"
+        }
+      }
+    },
+    "core": {
+      "type": "object",
+      "required": [
+        "life_element",
+        "bureau",
+        "life_palace_branch",
+        "body_palace"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "life_element": {
+          "type": "string"
+        },
+        "bureau": {
+          "type": "string"
+        },
+        "life_bureau_relation": {
+          "type": "string"
+        },
+        "yin_yang_direction": {
+          "type": "string"
+        },
+        "life_palace_branch": {
+          "type": "string"
+        },
+        "body_palace": {
+          "type": "string"
+        }
+      }
+    },
+    "palaces": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "$ref": "#/$defs/palace"
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "topic": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "INGEST",
+            "CORE",
+            "TOPIC",
+            "TIMING",
+            "RECTIFY",
+            "SOURCE_COMPARE",
+            "CRITIQUE",
+            "VALIDATE_CASE"
+          ]
+        },
+        "conclusions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/conclusion"
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "predictions_locked_at": {
+          "type": "string"
+        },
+        "real_events_revealed_at": {
+          "type": "string"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "palace": {
+      "type": "object",
+      "required": [
+        "name",
+        "branch",
+        "major_stars",
+        "supporting_stars",
+        "challenging_stars",
+        "transformations",
+        "tuan_triet"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string"
+        },
+        "stem": {
+          "type": "string"
+        },
+        "major_stars": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_stars": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "challenging_stars": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transformations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tuan_triet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "growth_cycle": {
+          "type": "string"
+        },
+        "decade_range": {
+          "type": "string"
+        },
+        "source_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "kind",
+        "location",
+        "interpretation",
+        "direction"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "toa_thu",
+            "tam_hop",
+            "xung_chieu",
+            "giap_cung",
+            "tu_hoa",
+            "menh_cuc",
+            "van_han",
+            "nghiem_ly",
+            "truong_phai",
+            "suy_luan"
+          ]
+        },
+        "location": {
+          "type": "string"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "support",
+            "counter"
+          ]
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "required": [
+        "statement",
+        "type",
+        "confidence",
+        "evidence",
+        "counterevidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "structure",
+            "scenario",
+            "timing"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "very_strong",
+            "strong",
+            "medium",
+            "weak"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "counterevidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verification_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "year",
+        "category",
+        "description",
+        "prediction_result"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": 1800,
+          "maximum": 2200
+        },
+        "category": {
+          "enum": [
+            "career",
+            "finance",
+            "marriage",
+            "children",
+            "family",
+            "health",
+            "relocation",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "prediction_result": {
+          "enum": [
+            "clear_match",
+            "partial_match",
+            "no_match",
+            "not_verifiable"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

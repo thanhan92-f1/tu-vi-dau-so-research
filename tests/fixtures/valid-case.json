@@ -1,0 +1,198 @@
+{
+  "project_version": "1.0.0",
+  "profile": {
+    "case_id": "TV-DEMO-001",
+    "name_alias": "Hồ sơ minh họa",
+    "sex_for_chart": "nam",
+    "birth": {
+      "calendar_type": "solar",
+      "date": "1990-01-01",
+      "lunar_leap_month": false,
+      "clock_time": "08:30",
+      "time_branch": "Thìn",
+      "place": "Dữ liệu giả định",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "source_of_time": "estimate",
+      "estimated_error_minutes": 30
+    },
+    "input_confidence": "C",
+    "chart_source": "Ví dụ cấu trúc, không phải lá số thật",
+    "school": "Chưa xác định"
+  },
+  "core": {
+    "life_element": "Chưa nhập",
+    "bureau": "Chưa nhập",
+    "life_bureau_relation": "Chưa nhập",
+    "yin_yang_direction": "Chưa nhập",
+    "life_palace_branch": "Chưa nhập",
+    "body_palace": "Chưa nhập"
+  },
+  "palaces": [
+    {
+      "name": "Mệnh",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Phụ Mẫu",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Phúc Đức",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Điền Trạch",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Quan Lộc",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Nô Bộc",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Thiên Di",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Tật Ách",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Tài Bạch",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Tử Tức",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Phu Thê",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    },
+    {
+      "name": "Huynh Đệ",
+      "branch": "",
+      "stem": "",
+      "major_stars": [],
+      "supporting_stars": [],
+      "challenging_stars": [],
+      "transformations": [],
+      "tuan_triet": [],
+      "growth_cycle": "",
+      "decade_range": "",
+      "source_notes": []
+    }
+  ],
+  "analysis": {
+    "topic": "minh họa",
+    "mode": "INGEST",
+    "conclusions": []
+  },
+  "validation": {
+    "predictions_locked_at": "",
+    "real_events_revealed_at": "",
+    "events": []
+  }
+}

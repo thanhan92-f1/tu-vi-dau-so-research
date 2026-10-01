@@ -1,0 +1,26 @@
+name: Báo lỗi
+about: Báo lỗi cấu trúc, script hoặc hành vi của skill
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Mô tả lỗi
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Cách tái hiện
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Kết quả mong đợi
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Quyền riêng tư
+      options:
+        - label: Tôi đã xóa dữ liệu nhận dạng cá nhân khỏi nội dung gửi lên.
+          required: true

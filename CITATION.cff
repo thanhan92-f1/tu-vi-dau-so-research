@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Tử Vi Đẩu Số Research Skill"
+message: "Nếu sử dụng dự án trong nghiên cứu hoặc ứng dụng, vui lòng trích dẫn repository này."
+type: software
+authors:
+  - name: "Nguyễn Thanh An"
+    website: "https://nguyenthanhan.com"
+version: 1.0.0
+date-released: 2026-07-12
+license: MIT
+repository-code: "https://github.com/thanhan92-f1/tu-vi-dau-so-research"

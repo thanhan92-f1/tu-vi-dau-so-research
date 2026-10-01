@@ -1,0 +1,23 @@
+name: Đề xuất quy tắc nghiên cứu
+about: Đề xuất thêm hoặc sửa quy tắc luận giải có nguồn
+labels: [research]
+body:
+  - type: input
+    attributes:
+      label: Tên quy tắc
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Nguồn và ấn bản
+      description: Ghi tác giả, sách, ấn bản, chương/trang nếu có.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Điều kiện áp dụng và phản chứng
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Ví dụ kiểm thử hoặc ca nghiệm lý ẩn danh

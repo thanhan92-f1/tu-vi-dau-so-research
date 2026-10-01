@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "types": {
+    "toa_thu": "Sao nằm trực tiếp tại cung",
+    "tam_hop": "Ảnh hưởng từ hai cung tam hợp",
+    "xung_chieu": "Ảnh hưởng từ cung đối diện",
+    "giap_cung": "Ảnh hưởng từ hai cung kẹp",
+    "tu_hoa": "Lộc, Quyền, Khoa, Kỵ và dòng phát–nhận",
+    "menh_cuc": "Quan hệ Mệnh, Cục, âm dương và ngũ hành",
+    "van_han": "Đại vận, tiểu hạn, lưu niên hoặc lưu nguyệt",
+    "nghiem_ly": "Dữ kiện thực tế đã xác nhận",
+    "truong_phai": "Quy tắc riêng của nguồn hoặc trường phái",
+    "suy_luan": "Kết nối logic của hệ thống, chưa phải trích dẫn trực tiếp"
+  }
+}
